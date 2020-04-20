@@ -9,10 +9,10 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="container">
             <input id="culture" name="culture" type="checkbox" value="pl" onclick="handleCheckbox(this);" />
-            <label for="culture">Scales</label>
+            <label for="culture">English</label>
         </div>
     </div>
     <div class="container body-content">
@@ -27,7 +27,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <script>
-        var handleCheckbox = function() {
+        var handleCheckbox = function(init) {
             if (document.getElementById('culture').checked) {
                 console.log("clicked")
                 $.ajax({
