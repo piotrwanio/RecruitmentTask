@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentTask.UI", "RecruitmentTask.UI\RecruitmentTask.UI.csproj", "{62244376-BD31-4AB1-B7FE-283180219E55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62244376-BD31-4AB1-B7FE-283180219E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62244376-BD31-4AB1-B7FE-283180219E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62244376-BD31-4AB1-B7FE-283180219E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62244376-BD31-4AB1-B7FE-283180219E55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {261B26B7-6F5F-4C5A-9114-91D299A21C57}
+	EndGlobalSection
+EndGlobal
