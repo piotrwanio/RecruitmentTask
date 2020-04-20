@@ -9,7 +9,7 @@ namespace RecruitmentTask.UI.Controllers
 {
     public class CultureController : BaseController
     {
-        public void ChangeCurrentCulture(string lang)
+        public ActionResult ChangeCurrentCulture(string lang)
         {
             Response.Cookies.Remove("Language");
 
@@ -23,11 +23,7 @@ namespace RecruitmentTask.UI.Controllers
 
             Response.SetCookie(languageCookie);
 
-            if (Request?.UrlReferrer != null)
-                Response.Redirect(Request.UrlReferrer.ToString());
-
-            else
-                RedirectToAction("Form", "Create");
+            return RedirectToAction("Create", "Form");
 
         }
     }
