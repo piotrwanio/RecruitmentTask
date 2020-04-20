@@ -31,13 +31,26 @@
         @{
             if (Request.Cookies["Language"] != null) {
                 ViewBag.Val = Request.Cookies["Language"].Value;
-
+                ViewBag.Init = false;
             }
             else
             {
-                ViewBag.Val = "en-GB";
+                ViewBag.Val = "pl-PL";
+                ViewBag.Init = true;
             }
          }
+
+        if ("@ViewBag.Init" == "True") {
+               $.ajax({
+                 type: 'GET',
+                       url:  "@Url.Action("ChangeCurrentCulture", "Culture")",
+                       data: { lang : "pl-PL" },
+                       success: function(data) {
+                       location.reload();
+                  }
+               });
+            @{ ViewBag.Init = false;}
+        }
 
         if ("@ViewBag.Val" == "en-GB") {
             document.getElementById('culture').checked = true;
